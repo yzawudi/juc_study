@@ -11,6 +11,8 @@ public class Test10 {
         Object B = new Object();
         new Thread(() -> {
             synchronized (A) {
+
+
                 log.debug("lock A");
                 try {
                     TimeUnit.SECONDS.sleep(1);
